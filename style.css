@@ -1,0 +1,100 @@
+/* Importing a clean font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Okra:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1c1c1c;
+    line-height: 1.5;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+header div:first-child {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #fff; /* White logo for the hero background */
+}
+
+header nav a, header div a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 25px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+/* Main Hero Section */
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* Using a food-themed background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+}
+
+main div {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+main h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    max-width: 800px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background: #f8f8f8;
+    padding: 40px 10%;
+    text-align: center;
+    color: #4f4f4f;
+    font-size: 0.9rem;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    main h1 { font-size: 2.5rem; }
+    header { flex-direction: column; gap: 15px; }
+    header div a { margin: 0 10px; }
+}
